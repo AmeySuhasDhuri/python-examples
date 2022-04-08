@@ -46,12 +46,14 @@ with more than
 one line code."""
 unicode = u"\u00dcnic\u00f6de"
 raw_str = r"raw \n string"
+not_raw_str = "raw \n string"
 
 print(strings)
 print(char)
 print(multiline_str)
 print(unicode)
 print(raw_str)
+print(not_raw_str)
 
 # Boolean literals
 x = (1 == True)
@@ -100,13 +102,11 @@ print("__________________________LEGB Rule: Local, Enclosing, Global, Built-in__
 
 x = 'Global x'
 
-
 def test():
     # global x
     y = 'Local y'
     x = 'Local x'
     print(x + ', ' + y)  # prints 'Local x' and 'Local y'
-
 
 if __name__ == '__main__':
     test()

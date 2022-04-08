@@ -48,6 +48,9 @@ lang = ("Python", "C", "C++", "Java")
 for i in range(len(lang)):
    print(lang[i])
 
+for i in lang:
+   print(i)
+
 print("__________________________for loop using list________________________________________________")
 
 a_list = ["a", "b", "c", "d"]
